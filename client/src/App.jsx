@@ -14,6 +14,7 @@ import ShoppingListing from "./pages/shopping-view/listing";
 import ShoppingCheckout from "./pages/shopping-view/checkout";
 import ShoppingAccount from "./pages/shopping-view/account";
 import CheckAuth from "./components/common/check-auth";
+import UnathPage from "./pages/unauth-page";
 
 function App() {
   const isAuthenticated = false;
@@ -55,6 +56,7 @@ function App() {
            <Route path="account" element={<ShoppingAccount/>}/>
         </Route>
          
+        <Route path="/unauth" element={<UnathPage/>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>
     </div>
